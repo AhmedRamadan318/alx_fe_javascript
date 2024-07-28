@@ -1,3 +1,5 @@
+// Constants
+const SERVER_URL = 'https://jsonplaceholder.typicode.com/posts';
 
 // Load quotes from local storage or use default quotes
 let quotes = JSON.parse(localStorage.getItem('quotes')) || [
