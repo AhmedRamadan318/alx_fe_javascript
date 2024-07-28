@@ -1,11 +1,11 @@
-
+// Array to hold quotes
 let quotes = [
     { text: "The only limit to our realization of tomorrow is our doubts of today.", category: "Inspiration" },
     { text: "Do not watch the clock. Do what it does. Keep going.", category: "Motivation" },
     { text: "Success is not the key to happiness. Happiness is the key to success.", category: "Success" }
   ];
   
-
+  // Function to show a random quote
   function showRandomQuote() {
     const quoteDisplay = document.getElementById('quoteDisplay');
     const randomIndex = Math.floor(Math.random() * quotes.length);
@@ -13,7 +13,7 @@ let quotes = [
     quoteDisplay.innerHTML = `<p>${quote.text}</p><p><em>${quote.category}</em></p>`;
   }
   
-  
+  // Function to add a new quote
   function addQuote() {
     const newQuoteText = document.getElementById('newQuoteText').value;
     const newQuoteCategory = document.getElementById('newQuoteCategory').value;
@@ -28,7 +28,9 @@ let quotes = [
     }
   }
   
+  // Event listener for showing a new quote
   document.getElementById('newQuote').addEventListener('click', showRandomQuote);
   
+  // Initial display of a quote
   showRandomQuote();
   
